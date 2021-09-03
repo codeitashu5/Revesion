@@ -1,48 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right|bottom"
-        android:text="Hello World!" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right|top"
-        android:text="Hello World!" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right|center"
-        android:text="Hello World!" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left|bottom"
-        android:text="Hello World!" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left|top"
-        android:text="Hello World!" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left|center"
-        android:text="Hello World!" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Hello World!" />
+    <!--
+    generally used to contain one view only
+    that's for frame layout
+    -->
 
 
-</FrameLayout>
+    <!--
+    generally used to contain one view only
+    that's for frame layout
+    -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center|left"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <TextView style="@style/text_style"
+            android:text="x2"
+            />
+        <TextView style="@style/text_style"
+            android:text="%"
+            />
+        <TextView style="@style/text_style"
+            android:text="1/x"
+            />
+
+        <TextView style="@style/text_style"
+            android:text="c"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <TextView style="@style/text_style"
+            android:text="8"
+            />
+        <TextView style="@style/text_style"
+            android:text="7"
+            />
+        <TextView style="@style/text_style"
+            android:text="9"
+            />
+
+        <TextView style="@style/text_style"
+            android:text="+"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <TextView style="@style/text_style"
+            android:text="4"
+            />
+        <TextView style="@style/text_style"
+            android:text="5"
+            />
+        <TextView style="@style/text_style"
+            android:text="6"
+            />
+
+        <TextView style="@style/text_style"
+            android:text="-"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <TextView style="@style/text_style"
+            android:text="1"
+            />
+        <TextView style="@style/text_style"
+            android:text="2"
+            />
+        <TextView style="@style/text_style"
+            android:text="3"
+            />
+
+        <TextView style="@style/text_style"
+            android:text="x"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <TextView style="@style/text_style"
+            android:text="."
+            />
+        <TextView style="@style/text_style"
+            android:text="0"
+            />
+        <TextView style="@style/text_style"
+            android:text="="
+            />
+
+        <TextView style="@style/text_style"
+            android:text="/"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
