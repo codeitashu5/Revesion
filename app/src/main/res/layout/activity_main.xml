@@ -6,51 +6,51 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    <!--
-    Constraint layout
-    concept of baseline
-   -->
-
-
-    <TextView
-        android:id="@+id/text_photo"
-        android:layout_width="0dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="10dp"
-        android:text="Ashutosh"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
     <!--
     we need to add one horizontal and one vertical constraints
     -->
 
+    <!--
+   Constraint layout
+   spread channing
+    -->
+
+
 
     <TextView
-        android:id="@+id/text_kallu"
-        android:layout_width="0dp"
-        android:layout_height="32dp"
-        android:layout_margin="10dp"
-        android:layout_marginEnd="20dp"
-        android:text="Kallu"
-        android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/text_photo"
-        app:layout_constraintEnd_toStartOf="@+id/text_photo" />
-
-    <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Ashutosh"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/text1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abhishek"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adarsh"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
